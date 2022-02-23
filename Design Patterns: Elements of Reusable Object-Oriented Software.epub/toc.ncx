@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="eng">
+  <head>
+    <meta content="fdf8b3b8-542f-44c3-8e5f-5b44e27b247e" name="dtb:uid"/>
+    <meta content="3" name="dtb:depth"/>
+    <meta content="calibre (0.9.3)" name="dtb:generator"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>Design Patterns: Elements of Reusable Object-Oriented Software</text>
+  </docTitle>
+  <navMap>
+    <navPoint class="chapter" id="a2aca56b-5ac1-4235-b7ca-d37000420e85" playOrder="2">
+      <navLabel>
+        <text>Title Page</text>
+      </navLabel>
+      <content src="text/part0002.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="82f9d0b3-a9fc-4b43-b283-68dc7dcbfda2" playOrder="3">
+      <navLabel>
+        <text>Copyright Page</text>
+      </navLabel>
+      <content src="text/part0003.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="c44bec05-ad5e-4cc2-ab8d-14a18bb083dc" playOrder="5">
+      <navLabel>
+        <text>Contents</text>
+      </navLabel>
+      <content src="text/part0006.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="a2509a7e-007e-45a6-9d99-e7c1dbbd1c8f" playOrder="1">
+      <navLabel>
+        <text>Addison-Wesley Professional Computing Series</text>
+      </navLabel>
+      <content src="text/part0001.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="7dba9613-d8f2-4b68-b36e-17974be14223" playOrder="4">
+      <navLabel>
+        <text>Praise for Design Patterns: Elements of Reusable Object-Oriented Software</text>
+      </navLabel>
+      <content src="text/part0005.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="dbf42418-366b-43fb-8bfb-88aad64431da" playOrder="6">
+      <navLabel>
+        <text>Preface</text>
+      </navLabel>
+      <content src="text/part0007.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="2d72553f-8a8f-469e-b511-94c726c5f111" playOrder="7">
+      <navLabel>
+        <text>Foreword</text>
+      </navLabel>
+      <content src="text/part0008.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="d630a2b5-0ffc-4a31-93cb-a6c91da74962" playOrder="8">
+      <navLabel>
+        <text>Guide to Readers</text>
+      </navLabel>
+      <content src="text/part0009.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="edeb1c8f-4dc4-4d06-b3d4-df831c326db2" playOrder="9">
+      <navLabel>
+        <text>Chapter 1. Introduction</text>
+      </navLabel>
+      <content src="text/part0010.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="f038c023-4983-4120-a7b0-316045be5f7d" playOrder="10">
+      <navLabel>
+        <text>Chapter 2. A Case Study: Designing a Document Editor</text>
+      </navLabel>
+      <content src="text/part0011.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="510491e6-001a-40c6-8266-8aaa06634eab" playOrder="11">
+      <navLabel>
+        <text>Design Pattern Catalog</text>
+      </navLabel>
+      <content src="text/part0012.html"/>
+      <navPoint class="chapter" id="c95be67d-4903-436b-8450-8d8ba25e1bf4" playOrder="12">
+        <navLabel>
+          <text>Chapter 3. Creational Patterns</text>
+        </navLabel>
+        <content src="text/part0013.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="3a2019bd-d03c-4964-b248-cdbe829dff23" playOrder="13">
+        <navLabel>
+          <text>Chapter 4. Structural Patterns</text>
+        </navLabel>
+        <content src="text/part0014.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="711cc775-54c3-4dd3-bdf1-4e170219760b" playOrder="14">
+        <navLabel>
+          <text>Chapter 5. Behavioral Patterns</text>
+        </navLabel>
+        <content src="text/part0015.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="daea7472-fc41-4303-b944-a58e07725a6d" playOrder="15">
+        <navLabel>
+          <text>Chapter 6. Conclusion</text>
+        </navLabel>
+        <content src="text/part0016.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="4c6fc3a9-91a8-48f7-93d0-8d81e4fe07ca" playOrder="16">
+      <navLabel>
+        <text>Appendix A. Glossary</text>
+      </navLabel>
+      <content src="text/part0017.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="9687616e-a6eb-4e41-a5f4-0710b8c8ae70" playOrder="17">
+      <navLabel>
+        <text>Appendix B. Guide to Notation</text>
+      </navLabel>
+      <content src="text/part0018.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="ad66f415-8a32-4ee5-b7b9-e0301a436ea1" playOrder="18">
+      <navLabel>
+        <text>Appendix C. Foundation Classes</text>
+      </navLabel>
+      <content src="text/part0019.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="d9b35647-fc57-4374-862e-e3fe40d46f79" playOrder="19">
+      <navLabel>
+        <text>Bibliography</text>
+      </navLabel>
+      <content src="text/part0020.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="fc501141-c619-4eae-a201-1ec9e80ad2f7" playOrder="20">
+      <navLabel>
+        <text>Index</text>
+      </navLabel>
+      <content src="text/part0021.html"/>
+    </navPoint>
+  </navMap>
+</ncx>

@@ -1,0 +1,458 @@
+.attribute {
+    display: block;
+    margin-bottom: 1.3em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.2em;
+    text-align: center;
+    text-indent: 0.002em
+    }
+.attribution {
+    display: block;
+    margin-bottom: 0.5em;
+    margin-left: 4.3em;
+    margin-right: 0;
+    margin-top: 0.2em;
+    text-indent: 0.002em
+    }
+.attribution1 {
+    display: block;
+    margin-bottom: 0.5em;
+    margin-left: 15em;
+    margin-right: 0;
+    margin-top: 0.2em;
+    text-indent: 0.002em
+    }
+.author {
+    display: block;
+    font-size: 1.125em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1.5em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1.5em;
+    text-align: center
+    }
+.blockquote {
+    display: block;
+    margin-bottom: 0.1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    text-indent: 0.002em
+    }
+.blockquote1 {
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 2.2em;
+    margin-right: 2.2em;
+    margin-top: 1em;
+    text-indent: 0.002em
+    }
+.calibre {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 0;
+    margin-left: 5pt;
+    margin-right: 5pt;
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0
+    }
+.calibre1 {
+    display: block;
+    margin-bottom: 0.4em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.5em;
+    text-indent: 0.002em
+    }
+.calibre10 {
+    display: block;
+    line-height: 1.2
+    }
+.calibre11 {
+    height: auto;
+    width: auto
+    }
+.calibre12 {
+    font-style: italic;
+    line-height: 1.2
+    }
+.calibre13 {
+    font-family: monospace;
+    font-size: 1em
+    }
+.calibre14 {
+    display: block
+    }
+.calibre15 {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.6em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+    }
+.calibre16 {
+    display: block;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin-bottom: 0.6em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+    }
+.calibre17 {
+    font-size: 0.75em;
+    line-height: normal;
+    vertical-align: sub
+    }
+.calibre18 {
+    font-size: 1em
+    }
+.calibre2 {
+    display: block;
+    font-size: 1.125em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 0.8em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+    }
+.calibre3 {
+    line-height: 1.2
+    }
+.calibre4 {
+    font-weight: bold
+    }
+.calibre5 {
+    display: block
+    }
+.calibre6 {
+    display: block;
+    font-size: 1.41667em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 2.2em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.7em
+    }
+.calibre7 {
+    font-style: italic
+    }
+.calibre8 {
+    font-size: 0.75em;
+    line-height: normal;
+    vertical-align: super
+    }
+.calibre9 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.3em;
+    text-align: center
+    }
+.caption {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.8em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.5em;
+    text-align: center;
+    text-indent: 0.002em
+    }
+.copy {
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.5em;
+    text-indent: 0.002em
+    }
+.copy1 {
+    display: block;
+    margin-bottom: 0.8em;
+    margin-left: 0.7em;
+    margin-right: 0;
+    margin-top: 2.5em;
+    text-indent: 0.002em
+    }
+.dedication {
+    display: block;
+    margin-bottom: 0.1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.5em;
+    text-align: center;
+    text-indent: 0.002em
+    }
+.glossary {
+    display: block;
+    margin-bottom: 0.4em;
+    margin-left: 2.2em;
+    margin-right: 0;
+    margin-top: 0.9em;
+    text-indent: -2.4em
+    }
+.image {
+    display: block;
+    margin-bottom: 0.4em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.5em;
+    text-align: center;
+    text-indent: 0.002em
+    }
+.indent {
+    display: block;
+    margin-bottom: 0.4em;
+    margin-left: 2.3em;
+    margin-right: 0;
+    margin-top: 0.4em;
+    text-indent: -2.3em
+    }
+.indent1 {
+    display: block;
+    margin-bottom: 0.4em;
+    margin-left: 3.8em;
+    margin-right: 0;
+    margin-top: 0.4em;
+    text-indent: 0.002em
+    }
+.indenthanging {
+    display: block;
+    margin-bottom: 0.4em;
+    margin-left: 0.8em;
+    margin-right: 0;
+    margin-top: 0.4em;
+    text-indent: -0.8em
+    }
+.indenthanging1 {
+    display: block;
+    margin-bottom: 0.4em;
+    margin-left: 2.4em;
+    margin-right: 0;
+    margin-top: 0.4em;
+    text-indent: -2.4em
+    }
+.indenthangingB {
+    display: block;
+    margin-bottom: 0.4em;
+    margin-left: 5.2em;
+    margin-right: 0;
+    margin-top: 0.4em;
+    text-indent: -0.7em
+    }
+.indenthangingB1 {
+    display: block;
+    margin-bottom: 0.4em;
+    margin-left: 1.8em;
+    margin-right: 0;
+    margin-top: 0.4em;
+    text-indent: -0.7em
+    }
+.indenthangingB2 {
+    display: block;
+    margin-bottom: 0.2em;
+    margin-left: 2.9em;
+    margin-right: 0;
+    margin-top: 0.2em;
+    text-indent: -0.6em
+    }
+.indenthangingB3 {
+    display: block;
+    margin-bottom: 0.2em;
+    margin-left: 3.2em;
+    margin-right: 0;
+    margin-top: 0.2em;
+    text-indent: -0.6em
+    }
+.indenthangingB4 {
+    display: block;
+    margin-bottom: 0.2em;
+    margin-left: 4.2em;
+    margin-right: 0;
+    margin-top: 0.2em;
+    text-indent: -0.6em
+    }
+.indenthangingN {
+    display: block;
+    margin-bottom: 0.2em;
+    margin-left: 1.8em;
+    margin-right: 0;
+    margin-top: 0.2em;
+    text-indent: -1em
+    }
+.indenthangingN1 {
+    display: block;
+    margin-bottom: 0.2em;
+    margin-left: 3.4em;
+    margin-right: 0;
+    margin-top: 0.2em;
+    text-indent: -1.5em
+    }
+.indentpara {
+    display: block;
+    margin-bottom: 0.4em;
+    margin-left: 1.8em;
+    margin-right: 0;
+    margin-top: 0.5em;
+    text-indent: -0.04em
+    }
+.indentpara1 {
+    display: block;
+    margin-bottom: 0.4em;
+    margin-left: 3.3em;
+    margin-right: 0;
+    margin-top: 0.5em;
+    text-indent: -0.04em
+    }
+.indexmain {
+    display: block;
+    margin-bottom: 0.4em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.4em;
+    text-indent: 0.002em
+    }
+.indexsub {
+    display: block;
+    margin-bottom: 0.4em;
+    margin-left: 2em;
+    margin-right: 0;
+    margin-top: 0.4em;
+    text-indent: 0.002em
+    }
+.paraindent {
+    display: block;
+    margin-bottom: 0.4em;
+    margin-left: 2em;
+    margin-right: 0;
+    margin-top: 0.5em;
+    text-indent: -0.03em
+    }
+.programlisting {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 0.4em;
+    margin-left: 3.8em;
+    margin-right: 0;
+    margin-top: 0.8em;
+    text-indent: 0.002em
+    }
+.programlisting1 {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 0.4em;
+    margin-left: 2.2em;
+    margin-right: 0;
+    margin-top: 0.5em;
+    text-indent: 0.002em
+    }
+.programlisting2 {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 0.4em;
+    margin-left: 3em;
+    margin-right: 0;
+    margin-top: 0.5em;
+    text-indent: 0.002em
+    }
+.programlisting3 {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 0.4em;
+    margin-left: 7.5em;
+    margin-right: 0;
+    margin-top: 0.5em;
+    text-indent: 0.002em
+    }
+.programlisting4 {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 0.4em;
+    margin-left: 2em;
+    margin-right: 0;
+    margin-top: 0.5em;
+    text-indent: 0.002em
+    }
+.publisher {
+    display: block;
+    margin-bottom: 0.4em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 3em;
+    text-align: center;
+    text-indent: 0.002em
+    }
+.publishertext {
+    display: block;
+    margin-bottom: 0.4em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.4em;
+    text-align: center;
+    text-indent: 0.002em
+    }
+.right {
+    display: block;
+    margin-bottom: 3em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.5em;
+    text-align: right;
+    text-indent: 0.002em
+    }
+.subtitle {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 2em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.4em;
+    text-align: center;
+    text-indent: 0.002em
+    }
+.toc-chapter {
+    display: block;
+    margin-bottom: 0.4em;
+    margin-left: 0.002em;
+    margin-right: 0;
+    margin-top: 0.5em;
+    text-indent: 0.002em
+    }
+.toc-part {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.5em;
+    text-indent: 0.002em
+    }
+.toc-preface {
+    display: block;
+    margin-bottom: 0.5em;
+    margin-left: 0.002em;
+    margin-right: 0;
+    margin-top: 0.4em;
+    text-indent: 0.002em
+    }
+.toc-section {
+    display: block;
+    margin-bottom: 0.4em;
+    margin-left: 0.7em;
+    margin-right: 0;
+    margin-top: 0.4em;
+    text-indent: 0.002em
+    }

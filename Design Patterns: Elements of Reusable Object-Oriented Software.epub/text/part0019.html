@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Appendix C. Foundation Classes</title>
+    <link rel="stylesheet" type="application/vnd.adobe-page-template+xml" href="page-template.xpgt"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href="../stylesheet.css" type="text/css" rel="stylesheet"/>
+<link href="../page_styles.css" type="text/css" rel="stylesheet"/>
+</head>
+  <body class="calibre">
+<p class="calibre1"><a id="app03"></a></p>
+<div class="calibre5"></div><h2 class="calibre6" id="calibre_pb_0"><a id="page_369" class="calibre3"></a>Appendix C. Foundation Classes</h2>
+<p class="calibre1">This appendix documents the foundation classes we use in the C++ sample code of several design patterns. We’ve intentionally kept the classes simple and minimal. We describe the following classes:</p>
+<p class="indenthangingB1">• <code class="calibre13">List</code>, an ordered list of objects.</p>
+<p class="indenthangingB1">• <code class="calibre13">Iterator</code>, the interface for accessing an aggregate’s objects in a sequence.</p>
+<p class="indenthangingB1">• <code class="calibre13">ListIterator</code>, an iterator for traversing a <code class="calibre13">List</code>.</p>
+<p class="indenthangingB1">• <code class="calibre13">Point</code>, a two-dimensional point.</p>
+<p class="indenthangingB1">• <code class="calibre13">Rect</code>, an axis-aligned rectangle.</p>
+<p class="calibre1">Some newer C++ standard types may not be available on all compilers. In particular, if your compiler doesn’t define <code class="calibre13">bool</code>, then define it manually as</p>
+<p class="programlisting"><img src="../images/00421.jpeg" alt="image" class="calibre11"/></p>
+<p class="calibre1"><a id="app03sec1lev1"></a></p>
+<h3 class="calibre2">C.1 List</h3>
+<p class="calibre1">The <code class="calibre13">List</code> class template provides a basic container for storing an ordered list of objects. <code class="calibre13">List</code> stores elements by value, which means it works for built-in types as well as class instances. For example, <code class="calibre13">List&lt;int&gt;</code> declares a list of <code class="calibre13">int</code>s. But most of the patterns use <code class="calibre13">List</code> to store pointers to objects, as in <code class="calibre13">List&lt;Glyph*&gt;</code>. That way <code class="calibre13">List</code> can be used for heterogeneous lists.</p>
+<p class="calibre1"><a id="page_370"></a>For convenience, <code class="calibre13">List</code> also provides synonyms for stack operations, which make code that uses <code class="calibre13">List</code> for stacks more explicit without defining another class.</p>
+<p class="programlisting"><img src="../images/00422.jpeg" alt="image" class="calibre11"/></p>
+<p class="calibre1">The following sections describe these operations in greater detail.</p>
+<p class="calibre1"><a id="app03sec2lev1"></a></p>
+<h4 class="calibre15">Construction, Destruction, Initialization, and Assignment</h4>
+<p class="calibre1"><code class="calibre13">List(long size)</code></p>
+<p class="paraindent">initializes the list. The <code class="calibre13">size</code> parameter is a hint for the initial number of elements.</p>
+<p class="calibre1"><code class="calibre13">List(List&amp;)</code></p>
+<p class="paraindent">overrides the default copy constructor so that member data are initialized properly.</p>
+<p class="calibre1"><code class="calibre13">~List()</code></p>
+<p class="paraindent">frees the list’s internal data structures but <em class="calibre7">not</em> the elements in the list. The class is not designed for subclassing; therefore the destructor isn’t virtual.</p>
+<p class="calibre1"><code class="calibre13">List&amp; operator=(const List&amp;)</code></p>
+<p class="paraindent">implements the assignment operation to assign member data properly.</p>
+<p class="calibre1"><a id="app03sec2lev2"></a></p>
+<h4 class="calibre15"><a id="page_371"></a>Accessing</h4>
+<p class="calibre1">These operations provide basic access to the list’s elements.</p>
+<p class="calibre1"><code class="calibre13">long Count() const</code></p>
+<p class="paraindent">returns the number of objects in the list.</p>
+<p class="calibre1"><code class="calibre13">Item&amp; Get (long index) const</code></p>
+<p class="paraindent">returns the object at the given index.</p>
+<p class="calibre1"><code class="calibre13">Item&amp; First() const</code></p>
+<p class="paraindent">returns the first object in the list.</p>
+<p class="calibre1"><code class="calibre13">Item&amp; Last() const</code></p>
+<p class="paraindent">returns the last object in the list.</p>
+<p class="calibre1"><a id="app03sec2lev3"></a></p>
+<h4 class="calibre15">Adding</h4>
+<p class="calibre1"><code class="calibre13">void Append(const Item&amp;)</code></p>
+<p class="paraindent">adds the argument to the list, making it the last element.</p>
+<p class="calibre1"><code class="calibre13">void Prepend(const Item&amp;)</code></p>
+<p class="paraindent">adds the argument to the list, making it the first element.</p>
+<p class="calibre1"><a id="app03sec2lev4"></a></p>
+<h4 class="calibre15">Removing</h4>
+<p class="calibre1"><code class="calibre13">void Remove(const Item&amp;)</code></p>
+<p class="paraindent">removes the given element from the list. This operation requires that the type of elements in the list supports the <code class="calibre13">==</code> operator for comparison.</p>
+<p class="calibre1"><code class="calibre13">void RemoveFirst()</code></p>
+<p class="paraindent">removes the first element from the list.</p>
+<p class="calibre1"><code class="calibre13">void RemoveLast()</code></p>
+<p class="paraindent">removes the last element from the list.</p>
+<p class="calibre1"><code class="calibre13">void RemoveAll()</code></p>
+<p class="paraindent">removes all elements from the list.</p>
+<p class="calibre1"><a id="app03sec2lev5"></a></p>
+<h4 class="calibre15"><a id="page_372"></a>Stack Interface</h4>
+<p class="calibre1"><code class="calibre13">Item&amp; Top() const</code></p>
+<p class="paraindent">returns the top element (when the List is viewed as a stack).</p>
+<p class="calibre1"><code class="calibre13">void Push(const Item&amp;)</code></p>
+<p class="paraindent">pushes the element onto the stack.</p>
+<p class="calibre1"><code class="calibre13">Item&amp; Pop()</code></p>
+<p class="paraindent">pops the top element from the stack.</p>
+<p class="calibre1"><a id="app03sec1lev2"></a></p>
+<h3 class="calibre2">C.2 Iterator</h3>
+<p class="calibre1"><code class="calibre13">Iterator</code> is an abstract class that defines a traversal interface for aggregates.</p>
+<p class="programlisting"><img src="../images/00423.jpeg" alt="image" class="calibre11"/></p>
+<p class="calibre1">The operations do the following:</p>
+<p class="calibre1"><code class="calibre13">virtual void First()</code></p>
+<p class="paraindent">positions the iterator to the first object in the aggregate.</p>
+<p class="calibre1"><code class="calibre13">virtual void Next()</code></p>
+<p class="paraindent">positions the iterator to the next object in the sequence.</p>
+<p class="calibre1"><code class="calibre13">virtual bool IsDone() const</code></p>
+<p class="paraindent">returns <code class="calibre13">true</code> when there are no more objects in the sequence.</p>
+<p class="calibre1"><code class="calibre13">virtual Item CurrentItem() const</code></p>
+<p class="paraindent">returns the object at the current position in the sequence.</p>
+<p class="calibre1"><a id="app03sec1lev3"></a></p>
+<h3 class="calibre2">C.3 ListIterator</h3>
+<p class="calibre1"><code class="calibre13">ListIterator</code> implements the <code class="calibre13">Iterator</code> interface to traverse List objects. Its constructor takes a list to traverse as an argument.</p>
+<p class="programlisting"><a id="page_373"></a><img src="../images/00424.jpeg" alt="image" class="calibre11"/></p>
+<p class="calibre1"><a id="app03sec1lev4"></a></p>
+<h3 class="calibre2">C.4 Point</h3>
+<p class="calibre1"><code class="calibre13">Point</code> represents a point in a two-dimensional Cartesian coordinate space. <code class="calibre13">Point</code> supports some minimal vector arithmetic. The coordinates of a <code class="calibre13">Point</code> are defined as</p>
+<p class="programlisting">typedef float Coord;</p>
+<p class="calibre1"><code class="calibre13">Point</code>’s operations are self-explanatory.</p>
+<p class="programlisting"><img src="../images/00425.jpeg" alt="image" class="calibre11"/></p>
+<p class="calibre1">The static member <code class="calibre13">Zero</code> represents <code class="calibre13">Point (0, 0)</code>.</p>
+<p class="calibre1"><a id="app03sec1lev5"></a></p>
+<h3 class="calibre2"><a id="page_374" class="calibre3"></a>C.5 Rect</h3>
+<p class="calibre1"><code class="calibre13">Rect</code> represents an axis-aligned rectangle. A <code class="calibre13">Rect</code> is defined by an origin point and an extent (that is, width and height). The <code class="calibre13">Rect</code> operations are self-explanatory.</p>
+<p class="programlisting"><img src="../images/00426.jpeg" alt="image" class="calibre11"/></p>
+<p class="calibre1">The static member <code class="calibre13">Zero</code> is equivalent to the rectangle</p>
+<p class="programlisting">Rect(Point(0, 0), Point(0, 0));</p>
+</body></html>
